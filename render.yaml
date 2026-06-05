@@ -1,12 +1,14 @@
 services:
-  - type: static
+  - type: web
     name: sara-beauty-artistry
+    runtime: static
     plan: free
     branch: main
     buildCommand: ""
     staticPublishPath: .
-    pullRequestPreviewsEnabled: true
+    previews:
+      generation: automatic
     routes:
       - type: rewrite
-        source: /*
-        destination: /index.html
+        source: "/*"
+        destination: "/index.html"
