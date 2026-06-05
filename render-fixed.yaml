@@ -1,5 +1,5 @@
 # Render static site Blueprint.
-# Static sites use type: web with runtime: static.
+# Use this file as the Blueprint Path if Render's current setup page cached an older render.yaml.
 services:
   - type: web
     name: sara-beauty-artistry
